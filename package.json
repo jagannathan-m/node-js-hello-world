@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "ci-test-unit": "npx jest --outputFile=results/jest.json --json",
-    "ci-test-lint": "DEBUG=eslint:cli-engine npx eslint src/sum.js -f tap --output-file results/lint.tap",
+    "ci-test-unit": "npx jest --outputFile=results/jest.json --json --no-update-notifier",
+    "ci-test-lint": "DEBUG=eslint:cli-engine npx eslint src/sum.js --no-update-notifier -f tap --output-file results/lint.tap",
     "start": "node server.js"
   },
   "author": "",
