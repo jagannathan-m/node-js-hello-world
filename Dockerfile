@@ -9,6 +9,8 @@ ENV DEMO_APP=Working
 # where available (npm@5+)
 COPY package*.json ./
 
+RUN npm config set update-notifier false
+
 RUN npm install --omit=dev
 # If you are building your code for production
 # RUN npm ci --omit=dev
