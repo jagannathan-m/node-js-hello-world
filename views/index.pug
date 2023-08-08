@@ -1,0 +1,28 @@
+html
+  head
+    style(type="text/css").
+      table {
+        width: 100%
+        border-bottom: 1px solid black
+        table-layout: fixed; 
+        width: 640px
+      }
+      th,td { 
+        vertical-align:top; 
+        padding:0 5px; 
+        border-bottom: 1px solid black;
+        word-wrap: break-all;
+      }
+    title= title
+  body
+    h1= message
+    #table-wrapper
+    table#desc
+      tr
+        th Name
+        th Value
+      each val, key  in env
+        tr
+          td=key
+          td=val 
+    
