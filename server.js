@@ -29,5 +29,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, HOST, () => {
-  console.log(`Running on http://${HOST}:${PORT} RUN_TIME:${process.env.RUN_TIME}`);
+  console.log(`Running on http://${HOST}:${PORT}`);
 }); 
