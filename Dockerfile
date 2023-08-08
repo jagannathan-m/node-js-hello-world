@@ -11,7 +11,7 @@ COPY package*.json ./
 
 RUN npm config set update-notifier false
 
-RUN npm install --omit=dev
+RUN npm install --omit=dev --no-update-notifier
 # If you are building your code for production
 # RUN npm ci --omit=dev
 
